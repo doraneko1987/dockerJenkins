@@ -1,6 +1,6 @@
-dev:
-docker run -v "$(PWD)":/data -p 9999:9999 --name="docker-dev" -d doraneko1987/dockerdemo yarn dev
+##打包文件
 dist:
-docker run -v "$(PWD)":/data --name="docker-dist" -d doraneko1987/dockerdemo yarn dist
-up:
-docker run -v "$(PWD)":/data --name="docker-up" -d doraneko1987/dockerdemo yarn install
+docker run -v "$(pwd)":/data --name="docker-dist" doraneko1987/dockerdemo yarn dist
+##下载依赖包
+download:
+docker run -v "$(pwd)":/data --name="docker-up" doraneko1987/dockerdemo yarn install
