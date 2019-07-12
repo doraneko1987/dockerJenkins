@@ -2,7 +2,7 @@
 FROM node:10
 
 ##安装node相关依赖
-##RUN npm install yarn -g
+RUN npm install yarn -g
 
 ## 创建一个目录
 RUN mkdir /data
