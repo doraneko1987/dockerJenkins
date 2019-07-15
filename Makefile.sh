@@ -1,1 +1,1 @@
-docker run -v "%cd%":/data doraneko1987/dockerdemo:1 yarn install
+docker run -v "$(pwd)":/data doraneko1987/dockerdemo:1 yarn install
