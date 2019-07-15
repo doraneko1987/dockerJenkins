@@ -1,5 +1,5 @@
 #!/bin/bash
-curDir=$(pwd)
+curDir="/var/jenkins_d/workspace/dockerDemo"
 name=$1
 echo "cur dir is:$curDir"
 if [ $name='dist' ];then
