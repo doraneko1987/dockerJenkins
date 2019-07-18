@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -l
 curDir="/var/jenkins_d/workspace/dockerDemo"
 name=$1
 echo "cur dir is:$curDir"
